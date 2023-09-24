@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanaka Guitar</title>
+    <link rel="stylesheet" href="../css/stylevy.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="navbar">
+        <div class="logo">
+            Tanaka Guitar
+        </div>
+        <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </a>
+        <div class="navlinks">
+            <ul>
+                <li><a href="../html/index.html">Home</a></li>
+                <li><a href="../html/gallery.html">Gallery</a></li>
+                <li><a href="#">Member</a></li>
+                <li><a href="../html/aboutus.html">About Us</a></li>
+                <li><a href="../html/contactus.html">Contact Us</a></li>
+            </ul>
+            <img src="../assets/User 03C.png" class="profile">
+        </div>
+    </header>
+    <section id="content">
+        <div class="title">Membership Application Form</div>
+        <form id="form">
+            <h2>Name:</h2>
+            <input type="text" placeholder="Full Name" id="name" name="name">
+            <h2>Email Address:</h2>
+            <input type="text" placeholder="Email Address" id="email" name="email">
+            <h2>Phone Number:</h2>
+            <input type="text" placeholder="Phone Number" id="phonenumber" name="phonenumber">
+            <h2>Gender:</h2>
+            <div class="radio">
+                <ul>
+                    <li>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <div class="check"></div>
+                    </li>
+                    <li>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        <div class="check"><div class="inside"></div></div>
+                    </li>
+                </ul>
+            </div>
+            <h2>Address:</h2>
+            <input type="text" placeholder="Address" id="address" name="address"><br>
+            <label class="checkbox">
+                <input type="checkbox" name="checkbox" name="subscription">
+                Get Daily Letter
+            </label>
+            <div class="button"><input type="submit" id="submit" class="submit"></div>
+        </form>
+    </section>
+    <footer>
+        <h1>Follow</h1>
+        <div class="socials">
+            <a href="https://mail.google.com/" target="_blank"><img src="../assets/gmail.png"></a>
+            <a href="https://instagram.com/" target="_blank"><img src="../assets/instagram.png"></a>
+            <a href="https://facebook.com/" target="_blank"><img src="../assets/Facebook (2).png"></a>
+            <a href="https://web.whatsApp.com" target="_blank"><img src="../assets/WhatsApp.png"></a>
+        </div>
+    </footer>
+</body>
+<script src="../javascript/memberscript.js"></script>
+</html>

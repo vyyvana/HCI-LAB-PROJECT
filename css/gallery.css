@@ -1,0 +1,341 @@
+/* global */
+*
+{
+    /* user-select: none; */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Manrope', sans-serif;
+    color:#fff;
+}
+
+body
+{
+    background-image: linear-gradient(rgba(172, 167, 155, 0.3),rgba(172, 167, 155, 0.3)) , url("../assets/guitar.jpg");
+    background-size: cover;
+    overflow-x: hidden;  
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+#navbar
+{
+    position: absolute;
+    width: 100vw;
+    height: 91px;
+    left: 0px;
+    top: 0px;
+    background: rgba(99, 92, 92, 0.6);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+    text-shadow: 1px 2px rgba(0,0,0, 0.1);
+}
+
+.navlinks 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navlinks ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navlinks li
+{
+    list-style: none;
+}
+
+.navlinks li a
+{
+    margin-right: 34px;
+    text-decoration: none;
+    color: rgb(172, 167, 155);
+    font-family: 'Manrope', sans-serif;
+    text-shadow: 1px 1px rgba(0,0,0, 0.1);
+    font-size: 27px;
+    display: block;
+}
+
+.navlinks img
+{
+    width: 73px;
+    margin-top: 5px;
+}
+
+.profile
+{
+    margin-right: 55px;
+    margin-left: 25px;
+}
+
+.logo
+{
+    font-family: 'Manrope', sans-serif;
+    color: #C7C0A7;
+    font-size: 39px;
+    margin-left: 55px;
+}
+
+.toggle-button
+{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+    margin-top: 21px;
+}
+
+.toggle-button .bar
+{
+    height: 3px;
+    width: 100%;
+    background-color: #C7C0A7;
+    border-radius: 10px;
+}
+
+.gallery-content
+{
+    padding-top: 8vw;
+}
+
+.title{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title h1{
+    font-size: 4vw;
+    /* padding: 20px; */
+}
+
+.title p{
+    /* padding: 20px 20px 30px 20px; */
+    font-size: 3vw;
+}
+
+.gallery-card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-selection{
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.50);
+    padding-bottom: 20px;
+    margin: 50px;
+}
+
+.gallery-selection img
+{
+    width: 40vw;
+    height: auto;
+}
+
+.gallery-selection .link-selection{
+    text-align: center;
+    margin-top: 6px;
+    font-size: 2vw;
+}
+
+.link-selection a{
+    color:black;
+    text-decoration: none;
+}
+
+footer
+{
+    width: 100vw;
+    /* position: absolute; */
+    /* bottom: 0px; */
+    height: 128px;
+    background: #494141;
+}
+
+footer h1
+{
+    color: #ACA79B;
+    font-size: 24px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+    margin-left: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 290px;
+    border-bottom: 2px solid rgba(172, 167, 155, 0.8);
+    /* transform: translateY(-15px); */
+}
+
+.socials
+{
+    /* transform: translateY(-15px); */
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.socials a
+{
+    margin-right: 13px;
+}
+
+@media (max-width: 1400px)
+{
+    #content
+    {
+        transform: translateY(115px);
+    }
+    .logo
+    {
+        font-size: 27px;
+    }
+    .navlinks ul li a
+    {
+        font-size: 20px;
+    }
+    #form input[type=text]
+    {
+        width: 80vw;
+    }
+    footer
+    {
+        /* position: absolute; */
+        bottom: 0px;
+        /* transform: translateY(285px); */
+        margin-bottom: 0;
+    }
+    .socials
+    {
+        margin-top: 0;
+        /* margin-left: 0; */
+    }
+    .gallery-content
+    {
+        padding-top: 15vw;
+    }
+    .gallery-card
+    {
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+}
+
+@media (max-width: 800px) {
+    body
+    {
+        overflow-x: hidden;
+    }
+    #form input[type=text]
+    {
+        width: 80vw;
+    }
+    .radio ul
+    {
+        padding-left: 0px;
+    }
+    .toggle-button
+    {
+        display: flex;
+    }
+    .logo
+    {
+        margin-left: 15px;
+        font-size: 25px;
+    }
+    .navlinks
+    {
+        top: 0;
+        transform: translateY(91px);
+        display: none;
+        width: 100vw;
+        background-color: #494141;
+        position: absolute;
+    }
+    .navlinks ul li a
+    {
+        margin-left: 175px ;
+    }
+    .navlinks img
+    {
+        visibility: hidden;
+    }
+    .navbar
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navlinks ul
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navlinks li
+    {
+        text-align: center;
+    }
+    .navlinks li a
+    {
+        padding: .5rem .1rem;
+    }
+    .navlinks.active
+    {
+        display: flex;
+    }
+    .gallery-card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }  
+    .gallery-content
+    {
+        padding-top: 30vw;
+    }
+    .title h1{
+        font-size: 9vw;
+        /* padding: 20px; */
+    }
+    
+    .title p{
+        /* padding: 20px 20px 30px 20px; */
+        font-size: 6vw;
+    }
+    .gallery-selection img
+    {
+        width: 60vw;
+        height: auto;
+    }
+    .gallery-selection .link-selection{
+        text-align: center;
+        margin-top: 6px;
+        font-size: 4vw;
+    }
+    
+}
+
+@media (width: 280px), (width: 653)
+{
+    .socials img
+    {
+        width: 40px;
+    }
+    footer h1
+    {
+        width: 230px;
+    }
+}

@@ -1,0 +1,627 @@
+/* global */
+
+*
+{
+    user-select: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Manrope', sans-serif;
+    color:#fff;
+}
+
+body
+{
+    background-image: linear-gradient(rgba(172, 167, 155, 0.3),rgba(172, 167, 155, 0.3)) , url("../assets/guitar.jpg");
+    background-size: cover;
+    overflow-x: hidden;  
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/* navigation button for media query: handphone & tablet */
+.content{
+    margin-bottom: 50px;
+}
+/* navbar */
+.toggle-button
+{
+    position: absolute;
+    top: .75rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 31px;
+    height: 21px;
+    margin-top: 21px;
+}
+
+.toggle-button .bar
+{
+    height: 3px;
+    width: 100%;
+    background-color: #C7C0A7;
+    border-radius: 10px;
+}
+
+#navbar
+{
+    position: absolute;
+    width: 100vw;
+    height: 91px;
+    left: 0px;
+    top: 0px;
+    background: rgba(99, 92, 92, 0.6);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100000;
+    text-shadow: 1px 2px rgba(0,0,0, 0.1);
+}
+
+.navlinks 
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navlinks ul
+{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navlinks li
+{
+    list-style: none;
+}
+
+.navlinks li a
+{
+    margin-right: 34px;
+    text-decoration: none;
+    color: rgb(172, 167, 155);
+    font-family: 'Manrope', sans-serif;
+    text-shadow: 1px 1px rgba(0,0,0, 0.1);
+    font-size: 27px;
+    display: block;
+}
+
+.navlinks img
+{
+    width: 73px;
+    margin-top: 5px;
+}
+
+.profile
+{
+    margin-right: 55px;
+    margin-left: 25px;
+}
+
+.logo
+{
+    font-family: 'Manrope', sans-serif;
+    color: #C7C0A7;
+    font-size: 39px;
+    margin-left: 55px;
+}
+/* banner */
+.banner
+{
+    padding: 5rem 8rem 2rem 7rem;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.banner_container
+{
+    display: flex;
+    flex-direction: row;
+    width: 75vw;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.each_banner
+{
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    background: #F9CA59;
+    text-align: center;
+    border-radius: 30px;
+    justify-content: center;
+    min-width: 70vw;
+}
+
+.banner_img
+{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 0;
+}
+
+.banner_desc
+{
+    font-size: 27px;
+    color: white;
+    font-weight: bold;
+    height: fit-content;
+    width: 500px;
+    justify-content: center;
+    margin: auto;
+}
+
+.img_address
+{
+    color: white;
+    /* position: absolute; */
+    width: fit-content;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    transform: translate(50px, -30px);
+}
+
+.banner_content
+{
+    display: flex;
+    margin: 0 10px;
+}
+
+.banner_content .banner_img
+{
+    margin: auto 20px;
+}
+
+.left, .right
+{
+    margin: 30px;
+    cursor: pointer;
+}
+/* category */
+.category{
+    color: white;
+    font-size: 23px;
+}
+.category h3{
+    text-align: center; 
+}
+
+.category ul{
+    text-align: center;
+}
+
+.category ul li{
+    display: inline-flex;
+    margin: 1rem 5rem;
+} 
+
+.category ul li a{
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+/* brand */
+.brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.brand_title{
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.brand_content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.brand_list{
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    width: 75vw;
+}
+.brand_list img{
+    margin: 10px;
+}
+.left1, .right1
+{
+    margin: 30px;
+    cursor: pointer;
+}
+/* footer */
+footer
+{
+    width: 100vw;
+    /* position: absolute;
+    bottom: 0px; */
+    height: 128px;
+    background: #494141;
+}
+
+footer h1
+{
+    color: #ACA79B;
+    font-size: 24px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: normal;
+    margin-left: 30px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 290px;
+    border-bottom: 2px solid rgba(172, 167, 155, 0.8);
+    /* transform: translateY(-15px); */
+}
+
+.socials
+{
+    /* transform: translateY(-15px); */
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+.socials a
+{
+    margin-right: 13px;
+}
+
+/* End Footer */
+
+.home-content
+{
+    min-height: 100vh;
+}
+
+/* media query for tablet */
+
+@media (max-width: 1400px) 
+{
+    /* global */
+    *{
+        font-size: 23px;
+    }
+    #content
+    {
+        transform: translateY(115px);
+    }
+    .logo
+    {
+        font-size: 27px;
+    }
+    .navlinks ul li a
+    {
+        font-size: 20px;
+    }
+    #form input[type=text]
+    {
+        width: 80vw;
+    }
+    footer
+    {
+        bottom: 0px;
+        /* transform: translateY(285px); */
+    }
+    .banner
+    {
+        padding-left: 0;
+    }
+    .banner_container
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-width: 60vw;
+    }
+    .banner_desc
+    {
+        font-size: 23px;
+    }
+    .each_banner
+    {
+        min-width: 900px;
+        min-height: 300px;
+    }
+    .banner_img img
+    {
+        width: 600px;
+    }
+    .banner_content .banner_img img
+    {
+        width: 250px;
+    }
+    .img_address
+    {
+        font-size: 15px;
+        transform: translate(0,0);
+    }
+    .brand
+    {
+        padding-bottom: 4vw;
+    }
+    .left, .right
+    {
+        margin: 0;
+    }
+    .left img
+    {
+        width: 88px;
+        height: auto;
+    }
+    .right img
+    {
+        width: 88px;
+        height: auto;
+    }
+    .left1 img
+    {
+        width: 66px;
+        height: auto;
+    }
+    .right1 img
+    {
+        width: 66px;
+        height: auto;
+    }
+    .left1, .right1
+    {
+        margin: 0;
+    }
+    .content
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 3vh;
+    }
+    .banner
+    {
+        padding-right: 0;
+    }
+    .category h3
+    {
+        font-size: 50px;
+    }
+    .category ul li a
+    {
+        font-size: 35px;
+    }
+}
+
+/* media query: hp(handphone) */
+
+@media (max-width: 800px) 
+{
+    body
+    {
+        overflow-x: hidden;
+    }
+    #form input[type=text]
+    {
+        width: 80vw;
+    }
+    .radio ul
+    {
+        padding-left: 0px;
+    }
+    .toggle-button
+    {
+        display: flex;
+    }
+    .logo
+    {
+        margin-left: 15px;
+        font-size: 25px;
+    }
+    .navlinks
+    {
+        top: 0;
+        transform: translateY(91px);
+        display: none;
+        width: 100vw;
+        background-color: #494141;
+        position: absolute;
+    }
+    .navlinks ul li a
+    {
+        margin-left: 175px ;
+    }
+    .navlinks img
+    {
+        visibility: hidden;
+    }
+    .navbar
+    {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .navlinks ul
+    {
+        width: 100%;
+        flex-direction: column;
+    }
+    .navlinks li
+    {
+        text-align: center;
+    }
+    .navlinks li a
+    {
+        padding: .5rem .1rem;
+    }
+    .navlinks.active
+    {
+        display: flex;
+    }
+    .banner
+    {
+        padding-left: 0;
+    }
+    .banner_container
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-width: 60vw;
+    }
+    .banner_desc
+    {
+        font-size: 13px;
+    }
+    .each_banner
+    {
+        min-width: 500px;
+        min-height: 150px;
+    }
+    .banner_img img
+    {
+        width: 300px;
+    }
+    .banner_content .banner_img img
+    {
+        width: 130px;
+    }
+    .img_address
+    {
+        font-size: 10px;
+        transform: translate(0,0);
+    }
+    .brand
+    {
+        padding-bottom: 4vw;
+    }
+    .left img
+    {
+        width: 40px;
+        height: auto;
+    }
+    .right img
+    {
+        width: 40px;
+        height: auto;
+    }
+    .left, .right
+    {
+        margin: 0;
+    }
+    .left1, .right1
+    {
+        margin: 0;
+    }
+    .left1 img
+    {
+        width: 40px;
+        height: auto;
+    }
+    .right1 img
+    {
+        width: 40px;
+        height: auto;
+    }
+    .left1, .right1
+    {
+        margin: 0;
+    }
+    .content
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 15vh;
+    }
+    .banner
+    {
+        padding-right: 0;
+    }
+    .category h3
+    {
+        font-size: 30px;
+    }
+    .category ul li a
+    {
+        font-size: 20px;
+    }
+    .socials img
+    {
+        width: 40px;
+    }
+    footer h1
+    {
+        width: 230px;
+    }
+}
+
+@media (width: 280px), (width: 653)
+{
+    .banner_desc
+    {
+        margin: 0;
+        padding: 0;
+    }
+    
+     .left img
+    {
+        width: 30px;
+        height: auto;
+    }
+    .right img
+    {
+        width: 30px;
+        height: auto;
+    }
+    .left1 img
+    {
+        width: 30px;
+        height: auto;
+    }
+    .right1 img
+    {
+        width: 30px;
+        height: auto;
+    }
+    .category ul, h3
+    {
+        padding: 0;
+        margin: 0;
+    }
+    .category h3
+    {
+        font-size: 25px;
+        margin-bottom: 1rem;
+    }
+    .category ul
+    {
+        width: 200px;
+    }
+    .category ul li
+    {
+        /* width: fit-content; */
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    .category ul li a
+    {
+        /* width: 60px; */
+        font-size: 15px;
+    }
+    .brand_title
+    {
+        font-size: 20px;
+        text-align: center;
+    }
+}
